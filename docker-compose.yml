@@ -3,7 +3,7 @@ version: "3"
 services:
 
   app:
-    build: .
-    volumes:
-      - ./app:/app
-    command: bash -c 'npm test'
+    build:
+      dockerfile: Dockerfile.production
+    image: ksv2005/devops-for-programmers-project-lvl1
+    command: npm test
