@@ -4,6 +4,7 @@ services:
 
   app:
     build:
+      context: .
       dockerfile: Dockerfile.production
     image: ksv2005/devops-for-programmers-project-lvl1:latest
     command: npm test
