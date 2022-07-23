@@ -1,4 +1,4 @@
-name: update-image
+name: send-docker-hub
 
 on: push
 
