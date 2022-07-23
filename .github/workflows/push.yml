@@ -10,6 +10,7 @@ jobs:
       - name: Test app
         run: make ci
   send_to_docker:
+    needs: test
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
