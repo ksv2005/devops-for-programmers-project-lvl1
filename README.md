@@ -18,6 +18,6 @@ make ci Запуск тестов
 
 make copy-env Копирование переменных
 
-## Ссылка на созданный на Dockerhub образ
+## Образ на Dockerhub 
 
-https://hub.docker.com/repository/docker/ksv2005/devops-for-programmers-project-lvl1_app
+https://hub.docker.com/r/ksv2005/devops-for-programmers-project-lvl1_app
