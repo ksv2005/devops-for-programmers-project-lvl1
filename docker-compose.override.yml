@@ -11,3 +11,13 @@ services:
     volumes:
       - ./app:/app
     command: npm run dev
+
+  caddy:
+    image: caddy:2.5.2
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - app
